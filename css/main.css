@@ -1,0 +1,26 @@
+/* This is the main css */
+
+
+.topmenucontainer {
+    height: 64px; 
+    background-color: #F4F4F4 ;
+}
+
+.topmenu {
+    display:flex; 
+    list-style:none;
+}
+
+
+.topmenu li {
+    margin-right:10px; 
+}
+
+.topmenu li a {
+    text-decoration: none;
+    color:black;
+}
+
+.topmenu li a:hover {
+    color:blue; 
+}
