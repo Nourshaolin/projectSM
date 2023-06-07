@@ -1,37 +1,18 @@
-/* This is the main css 
+/* This is the main css*/
 
-
-.topmenucontainer {
+.topmenucontainer{
   height: 64px; 
-  background-color: #F4F4F4 ;
+  background-color:rgb(239, 239, 239);
 }
 
-.topmenu {
-  display:flex; 
-  list-style:none;
-}
-
-
-.topmenu li {
-  margin-right:10px; 
-}
-
-.topmenu li a {
-  text-decoration: none;
-  color:black;
-}
-
-.topmenu li a:hover {
-  color:blue; 
-}*/
 .topmenu{
   display: flex;
-  padding-top: 8px;
+  padding-top: 15px;
+  list-style: none;
 }
 
 .topmenu li{
-  list-style: none;
-  margin-left: 20px;
+  margin-right: 20px;
 }
  
 .topmenu li a{
@@ -44,21 +25,32 @@
   color:rgb(230, 192, 130);
 }
 
+.topmenuli5{
+  background-color:rgb(230, 192, 130);
+  padding-left:10px;
+  padding-right: 10px;
+  padding-top:3px;
+  padding-bottom:3px;   
+  border-radius: 3px;
+}
+
+.topmenucontainer2{
+  background-color:rgb(230, 192, 130);
+}
+
 .topmenu2{
   display: flex;
-  font-weight: bold;
+  padding-top: 8px;
+  list-style: none;
 }
 
 .topmenu2 li{
-  list-style: none;
-  margin-left: 30px;
-  padding-top: 8px;
-
+  margin-right: 30px;
 }
 
 .topmenu2 li a{
-  background-color: rgb(230, 192, 130);;
   text-decoration: none;
   color: rgb(239, 239, 239);
+  font-weight: bold;
 }
 
