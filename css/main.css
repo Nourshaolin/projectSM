@@ -1,0 +1,64 @@
+/* This is the main css 
+
+
+.topmenucontainer {
+  height: 64px; 
+  background-color: #F4F4F4 ;
+}
+
+.topmenu {
+  display:flex; 
+  list-style:none;
+}
+
+
+.topmenu li {
+  margin-right:10px; 
+}
+
+.topmenu li a {
+  text-decoration: none;
+  color:black;
+}
+
+.topmenu li a:hover {
+  color:blue; 
+}*/
+.topmenu{
+  display: flex;
+  padding-top: 8px;
+}
+
+.topmenu li{
+  list-style: none;
+  margin-left: 20px;
+}
+ 
+.topmenu li a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.topmenu li a:hover{
+  color:rgb(230, 192, 130);
+}
+
+.topmenu2{
+  display: flex;
+  font-weight: bold;
+}
+
+.topmenu2 li{
+  list-style: none;
+  margin-left: 30px;
+  padding-top: 8px;
+
+}
+
+.topmenu2 li a{
+  background-color: rgb(230, 192, 130);;
+  text-decoration: none;
+  color: rgb(239, 239, 239);
+}
+
