@@ -2,12 +2,25 @@
 
 .topmenucontainer{
   height: 64px; 
-  background-color:rgb(239, 239, 239);
+  align-items: center;
+}
+
+.mainmenucontainer{
+    height: 40px; 
+    align-items: center;
+  }
+
+.bg-topmenu {
+    background-color:rgb(239, 239, 239);
+}
+
+
+.bg-main {
+    background-color: #125eb8;
 }
 
 .topmenu{
   display: flex;
-  padding-top: 15px;
   list-style: none;
 }
 
@@ -25,8 +38,19 @@
   color:rgb(230, 192, 130);
 }
 
+.topmenu li:last-child {
+background-color: #cba052;
+  padding-left:10px;
+  padding-right: 10px;
+  padding-top:3px;
+  padding-bottom:3px;   
+  border-radius: 3px;
+}
+
+
+
 .topmenuli5{
-  background-color:rgb(230, 192, 130);
+  background-color: #cba052;
   padding-left:10px;
   padding-right: 10px;
   padding-top:3px;
@@ -38,18 +62,76 @@
   background-color:rgb(230, 192, 130);
 }
 
-.topmenu2{
+.mainmenu{
   display: flex;
-  padding-top: 8px;
   list-style: none;
 }
 
-.topmenu2 li{
+.mainmenu li{
   margin-right: 30px;
 }
 
-.topmenu2 li a{
+.mainmenu li a{
   text-decoration: none;
   color: rgb(239, 239, 239);
   font-weight: bold;
+}
+
+body {
+    font-family: 'Almarai', sans-serif;
+}
+
+ul {
+    margin-bottom:0; 
+}
+
+.langmenu { 
+    display:flex; 
+    list-style-type: none;
+    align-items: center;
+
+}
+
+.langmenu li {
+    margin-left:10px; 
+}
+
+.langmenu li a {
+    text-decoration: none;
+    color:black; 
+}
+
+.langmenu li a:hover {
+    color:#cba052; 
+}
+
+.langmenu li:last-child {
+    background-color: #f5d394; 
+    padding:10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.langmenu li:last-child:hover {
+    background-color: #cba052;
+    
+}
+
+.langmenu li:last-child:hover a {
+    color:white;
+}
+
+.logo {
+    background-color:white; 
+    width: fit-content;
+    padding:20px; 
+    border-radius: 0 0 20px 20px;
+    position:absolute;
+    top:0; 
+    right:0; 
+    border:solid black .5px
+}
+
+.mainposition {
+    position:relative;
 }
