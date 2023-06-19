@@ -14,54 +14,119 @@
 
 
 <body>
-  <div class="containerfluid bg-topmenu">
-    <div class="container position-relative">
-        <div class="logo">
-            <a href=""><img src="img/logo.svg" alt="Logo Agadir"></a>
+  <header class="d-none d-xl-block">
+    <div class="containerfluid bg-topmenu">
+      <div class="container position-relative">
+          <div class="logo">
+              <a href=""><img src="img/logo.svg" alt="Logo Agadir"></a>
+          </div>
+          <div class="row topmenucontainer">
+              <div class="col-6">
+                <ul class="topmenu">
+                  <li><a href="">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20" class="w-6 h-6">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                    </svg>
+                  </a></li>
+                  <li><a href="">التواصل</a></li>
+                  <li><a href="">الزيارات الافتراضية</a></li>
+                  <li><a href="">أخبار الجماعة</a></li>
+                  <li><a href="">أخبار </a></li>
+                  <li><a href="" style="color:rgb(239, 239, 239);">خدمات الكترونية</a></li>
+                </ul>       
+              </div> 
+            <div class="col-5">
+              <ul class="langmenu" >
+                <li><a href="">English</a></li>
+                <li><a href="">Français</a></li>
+                <li><a href="">ⵜⴰⵎⴰⵣⵉⵖⵜ</a></li>
+                <li><a href="">العربية</a></li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="row topmenucontainer">
+    </div>
+    <div class="containerfluid bg-main">
+      <div class="container">
+          <div class="row mainmenucontainer"> 
+            <div class="col-11">
+              <ul class="mainmenu">
+                <li><a href="">الجماعة الترابية</a></li>
+                <li><a href="">مدينة اكادير</a></li>
+                <li><a href="">اكادير مدينة مستدامة</a></li>
+                <li><a href="">الإجراءات الإدارية</a></li>
+                <li><a href="">برنامج عمل الجماعة</a></li>
+                <li><a href="">برنامج التنمية الحضرية</a></li>
+                <li><a href="">منشوراتنا</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+  </header>
+
+  <!-- Header for mobile -->
+  <header class="d-xl-none">
+
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div class="mobile_container">
+          <ul class="mobile_mainmenu">
+            <li><a href="">الجماعة الترابية</a></li>
+            <li><a href="">مدينة اكادير</a></li>
+            <li><a href="">اكادير مدينة مستدامة</a></li>
+            <li><a href="">الإجراءات الإدارية</a></li>
+            <li><a href="">برنامج عمل الجماعة</a></li>
+            <li><a href="">برنامج التنمية الحضرية</a></li>
+            <li><a href="">منشوراتنا</a></li>
+          </ul>
+
+          <ul class="mobile_mainmenu my-5" >
+            <li><a href="">English</a></li>
+            <li><a href="">Français</a></li>
+            <li><a href="">ⵜⴰⵎⴰⵣⵉⵖⵜ</a></li>
+            <li><a href="">العربية</a></li>
+          </ul>
+
+          <ul class="mobile_mainmenu">
+            <li><a href="">بحث</a></li>
+            <li><a href="">التواصل</a></li>
+            <li><a href="">الزيارات الافتراضية</a></li>
+            <li><a href="">أخبار الجماعة</a></li>
+            <li><a href="">أخبار </a></li>
+            <li><a href="">خدمات الكترونية</a></li>
+          </ul> 
+        </div>
+      </div>
+    </div>
+
+    <div class="containerfluid bg-topmenu">
+      <div class="container position-relative">
+          <div class="logo">
+              <a href=""><img src="img/logo.svg" alt="Logo Agadir"></a>
+          </div>
+
+          <div class="row">
             <div class="col-6">
-              <ul class="topmenu">
-                <li><a href="">
-                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" width="20" height="20" class="w-6 h-6">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
-                  </svg>
-                </a></li>
-                <li><a href="">التواصل</a></li>
-                <li><a href="">الزيارات الافتراضية</a></li>
-                <li><a href="">أخبار الجماعة</a></li>
-                <li><a href="">أخبار </a></li>
-                <li><a href="" style="color:rgb(239, 239, 239);">خدمات الكترونية</a></li>
-              </ul>       
-            </div> 
-          <div class="col-5">
-            <ul class="langmenu" >
-              <li><a href="">English</a></li>
-              <li><a href="">Français</a></li>
-              <li><a href="">ⵜⴰⵎⴰⵣⵉⵖⵜ</a></li>
-              <li><a href="">العربية</a></li>
-            </ul>
+              <div class="bg-hamburger">
+                <a data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="white" class="hamburgericon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12" />
+                  </svg>                  
+                </a>
+              </div>
+            </div>
           </div>
+          
+        
         </div>
-      </div>
-  </div>
-  <div class="containerfluid bg-main">
-    <div class="container">
-        <div class="row mainmenucontainer"> 
-          <div class="col-11">
-            <ul class="mainmenu">
-              <li><a href="">الجماعة الترابية</a></li>
-              <li><a href="">مدينة اكادير</a></li>
-              <li><a href="">اكادير مدينة مستدامة</a></li>
-              <li><a href="">الإجراءات الإدارية</a></li>
-              <li><a href="">برنامج عمل الجماعة</a></li>
-              <li><a href="">برنامج التنمية الحضرية</a></li>
-              <li><a href="">منشوراتنا</a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-  </div>
+    </div>
+    
+  </header>
   <section>
       <div class="bg-hero d-flex align-items-center justify-content-center flex-col" style="background-image:url('img/hero.jpeg');">
         <div class="content-hero"> 
@@ -76,7 +141,7 @@
 <section style="margin-top:60px">
   <div class="container">
     <div class="row servicecontainer">
-    <div class="col-8" style="padding: 0;">
+    <div class="col-xl-8" style="padding: 0;">
       <ul class="service">
         <li><a href=""><div class="serviceimg"><img src="img/img1.jpeg" class="img" alt="">
         <h3 class="img-text">الإجراءات الإدارية</h3></div></a></li>
@@ -86,7 +151,7 @@
         <h3 class="img-text">الجماعة الترابية</h3></div></a></li>
       </ul>
     </div>
-    <div class="col-4" style="padding: 0;">
+    <div class="col-xl-4" style="padding: 0;">
       <h2 class="sub-title">مستجدات الجماعة</h2>
       <ul class="sub-text">
         <li><a href=""><span class="date">13 يونيو</span><span class="date-info"> اعلان للعموم...</span></a></li>
@@ -146,15 +211,15 @@
 
 
   <div class="row my-5">
-    <div class="col-4 matisha bg-primary">
+    <div class="col-4 bg-primary">
       Matisha
     </div>
 
-    <div class="col-4 matisha bg-primary">
+    <div class="col-4 bg-primary">
       Matisha
     </div>
 
-    <div class="col-4 matisha bg-primary">
+    <div class="col-4 bg-primary">
       Matisha
     </div>
 
@@ -164,6 +229,25 @@
 
   
 </section>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-3 bg-primary">
+      One of three columns
+    </div>
+    <div class="col-3 bg-primary">
+      One of three columns
+    </div>
+    <div class="col-3 bg-primary">
+      One of three columns
+    </div>
+
+    <div class="col-3 bg-primary">
+      One of three columns
+    </div>
+  </div>
+</div>
   <script src="js/main.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>

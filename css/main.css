@@ -1,5 +1,10 @@
 /* This is the main css*/
 
+:root {
+  --logoAgadir : #0056a3; 
+}
+
+
 .topmenucontainer{
   height: 64px; 
   align-items: center;
@@ -57,9 +62,7 @@
 }
 
 /*structures the top content*/
-*, ::after,::before {
-  box-sizing:content-box;
-}
+
 
 .mainmenu li{
   margin-right: 30px;
@@ -143,8 +146,9 @@ ul {
   content:"";
   height:100%;
   width:100%;
-  background-color: rgba(0,0,0,0.2);
+  background-color: #000;
   position: absolute;
+  opacity: 0.4;
   z-index:0;
 }
 
@@ -169,6 +173,15 @@ ul {
   display:flex;
   list-style: none;
   padding-left: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+
+@media (max-width:768px) {
+  .service {
+    gap:10px;
+  }
 }
 
 .serviceimg{
@@ -176,11 +189,11 @@ ul {
 }
 
 .img{
-  width:240px;
-  height:360px;
   border-radius: 20px;
   margin:0 5px;
 }
+
+
 
 .img-text{
   position:absolute;
@@ -262,4 +275,32 @@ ul {
 
 .matisha {
   height:200px;
+}
+
+/* 
+Mobile menu */
+
+.bg-hamburger {
+  background-color: var(--logoAgadir);
+  width:fit-content;
+  padding:10px;
+  border-radius: 3px;
+  position:absolute;
+  top:30px;
+}
+
+.hamburgericon {
+  width:30px; 
+  height:30px; 
+}
+
+
+.mobile_mainmenu {
+  list-style-type: none;
+  text-align: center;
+}
+
+.mobile_mainmenu a {
+  color:#000; 
+  text-decoration: none;
 }
