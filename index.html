@@ -11,11 +11,13 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap" rel="stylesheet">
 </head>
+
+
 <body>
   <div class="containerfluid bg-topmenu">
     <div class="container position-relative">
         <div class="logo">
-            <img src="img/logo.svg" alt="Logo Agadir">
+            <a href=""><img src="img/logo.svg" alt="Logo Agadir"></a>
         </div>
         <div class="row topmenucontainer">
             <div class="col-6">
@@ -60,18 +62,49 @@
         </div>
       </div>
   </div>
-
-
   <section>
-    <div class="bg-hero d-flex text-center text-white align-items-center justify-content-center flex-col" style="background-image:url('img/hero_image.jpeg');">
-      <div class="content-hero">
-        <h1>بوابة الجماعة الترابية لأكادير </h1>
-        <button class="btn btn-primary">
+      <div class="bg-hero d-flex align-items-center justify-content-center flex-col" style="background-image:url('img/hero.jpeg');">
+        <div class="content-hero"> 
+          <h1>بوابة الجماعة الترابية لأكادير </h1>
+          <!--boostrap class that changes the button's color and shape-->
+          <button class="btn btn-primary button-hero"> 
           تعرف على الجماعة
-        </button>
-      </div>
+          </button>
+        </div>
     </div>
-  </section>
+</section>
+<section style="margin-top:60px">
+  <div class="container">
+    <div class="row servicecontainer">
+    <div class="col-8" style="padding: 0;">
+      <ul class="service">
+        <li><a href=""><div class="serviceimg"><img src="img/img1.jpeg" class="img" alt="">
+        <h3 class="img-text">الإجراءات الإدارية</h3></div></a></li>
+        <li><a href=""><div class="serviceimg"><img src="img/img2.jpeg" class="img" alt="">  
+        <h3 class="img-text">الإجراءات الإدارية</h3></div></a></li>
+        <li><a href=""><div class="serviceimg"><img src="img/img3.jpeg" class="img" alt="">
+        <h3 class="img-text">الجماعة الترابية</h3></div></a></li>
+      </ul>
+    </div>
+    <div class="col-4" style="padding: 0;">
+      <h5 class="sub-title">مستجدات الجماعة</h5>
+      <ul class="sub-text">
+        <li><a href=""><span class="date">13 يونيو</span><span class="date-info"> اعلان للعموم...</span></a></li>
+        <li><a href=""><span class="date">31 مايو</span><span class="date-info"> رئيس الحكومة يفتتح المركز الصحي من...</span></a></li>
+        <li><a href=""><span class="date">31 مايو</span><span class="date-info"> توقيع اتفاقية تهيئة وتجهيز “المركز...</span></a></li>
+        <li><a href=""><span class="date">9 مايو</span><span class="date-info"> المجلس الجماعي لأكادير يخصص الجلسة...</span></a></li>
+        <li><a href=""><span class="date">6 مايو</span><span class="date-info"> المجلس الجماعي لأكادير يعقد دورته العادية...</span></a></li>
+      </ul>
+
+      <button class="btn btn-primary service-button"> 
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6" style="height:20px; width:20px;">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+      مستجدات أكثر</button>
+    </div>
+    </div>
+  </div>
+</section>
   <script src="js/main.js"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
 </body>

@@ -3,6 +3,7 @@
 .topmenucontainer{
   height: 64px; 
   align-items: center;
+  box-sizing: block;
 }
 
 .mainmenucontainer{
@@ -21,7 +22,7 @@
 
 .topmenu{
   display: flex;
-  list-style: none;
+  list-style: none; 
 }
 
 .topmenu li{
@@ -31,7 +32,6 @@
 .topmenu li a{
   text-decoration: none;
   color: black;
-  font-weight: bold;
 }
 
 .topmenu li a:hover{
@@ -47,24 +47,14 @@ background-color: #cba052;
   border-radius: 3px;
 }
 
-
-
-.topmenuli5{
-  background-color: #cba052;
-  padding-left:10px;
-  padding-right: 10px;
-  padding-top:3px;
-  padding-bottom:3px;   
-  border-radius: 3px;
-}
-
-.topmenucontainer2{
-  background-color:rgb(230, 192, 130);
-}
-
 .mainmenu{
   display: flex;
   list-style: none;
+}
+
+/*structures the top content*/
+*, ::after,::before {
+  box-sizing:content-box;
 }
 
 .mainmenu li{
@@ -74,7 +64,6 @@ background-color: #cba052;
 .mainmenu li a{
   text-decoration: none;
   color: rgb(239, 239, 239);
-  font-weight: bold;
 }
 
 body {
@@ -129,32 +118,125 @@ ul {
     position:absolute;
     top:0; 
     right:0; 
+    box-shadow: 1px 0px 5px rgba(0,0,0,0.9);
 }
 
 .mainposition {
     position:relative;
 }
 
-
-.bg-hero {
-   background-size:cover; 
-   background-repeat: no-repeat;
-   background-position:center; 
-   height: 530px;
-   position:relative; 
-   z-index: -1; 
+.bg-hero{
+  height:530px;
+  background-position:center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position:relative;
+  z-index:-1;
 }
 
-.bg-hero:before {
-  content:" ";
-  position:absolute; 
-  width:100%; 
-  height:100%; 
-  background:#000; 
-  opacity:0.5;
-  z-index: 0;
+.bg-hero:before{
+  content:"";
+  height:100%;
+  width:100%;
+  background-color: rgba(0,0,0,0.2);
+  position: absolute;
+  z-index:0;
 }
 
-.content-hero {
+.content-hero{
+  color:white;
+  text-align: end;
   z-index:1;
 }
+
+.button-hero{
+  background-color: #125eb8;
+  border-color: #125eb8;
+}
+
+.button-hero:hover{
+  cursor: pointer;
+  background-color: #cba052;
+  border-color: #cba052;
+}
+
+.service{
+  display:flex;
+  list-style: none;
+  padding-left: 0;
+}
+
+.serviceimg{
+  position: relative;  
+}
+
+.img{
+  width:240px;
+  height:360px;
+  border-radius: 20px;
+  margin:0 5px;
+}
+
+.img-text{
+  position:absolute;
+  padding-right:25px;
+  padding-left:25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color:#125eb8;
+  border-radius:5px 0px 0px 5px;
+  color:white;
+  font-size: 19px;
+  font-weight: bold;
+  text-align: left;
+  bottom:10px;
+  right: 5px;
+}
+
+.sub-title{
+  text-align: end;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.sub-text{
+  padding-top:40px;
+  padding-right:9px;
+  padding-bottom: 30px;
+  list-style: none;
+  direction:rtl;
+}
+
+.sub-text li{
+  padding-top: 15px;
+}
+
+.sub-text li a{
+  text-decoration: none;
+  text-align: start;
+  font-weight: bold;
+}
+
+.date{
+  color:#125eb8;
+}
+
+.date-info{
+  color: #343a40;
+  position: relative; /*notetoself: to the hover, u need it*/
+}
+
+.date-info:hover{
+  left:-20px;
+}
+
+.service-button{
+  margin-left:auto;
+  display:block;
+}
+
+.service-button:hover{
+  background-color: #cba052;
+  border-color: #cba052;
+}
+
