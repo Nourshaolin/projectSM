@@ -39,13 +39,17 @@
 }
 
 .topmenu li:last-child {
-background-color: #cba052;
+  background-color: #cba052;
   padding-left:10px;
   padding-right: 10px;
   padding-top:3px;
   padding-bottom:3px;   
   border-radius: 3px;
 }
+
+/*.topmenu li:last-child:hover{
+  color: #343a40;
+}*/
 
 .mainmenu{
   display: flex;
@@ -68,6 +72,7 @@ background-color: #cba052;
 
 body {
     font-family: 'Almarai', sans-serif;
+    background-color: rgb(239, 239, 239);
 }
 
 ul {
@@ -196,12 +201,11 @@ ul {
 .sub-title{
   text-align: end;
   font-weight: bold;
-  font-size: 30px;
 }
 
 .sub-text{
   padding-top:40px;
-  padding-right:9px;
+  padding-right:11px;
   padding-bottom: 30px;
   list-style: none;
   direction:rtl;
@@ -209,6 +213,7 @@ ul {
 
 .sub-text li{
   padding-top: 15px;
+  font-size: 15.5px;
 }
 
 .sub-text li a{
@@ -228,11 +233,13 @@ ul {
 
 .date-info:hover{
   left:-20px;
+  transition:left 0.5s;
 }
 
 .service-button{
   margin-left:auto;
   display:block;
+  background-color: #125eb8;
 }
 
 .service-button:hover{
@@ -240,3 +247,19 @@ ul {
   border-color: #cba052;
 }
 
+.sub-title-2{
+  text-align: center;
+  font-weight: bold;
+}
+
+
+.child{
+  border: 1px solid var(--bs-blue);
+  text-align: center;
+  height: 200px;
+  background-color: #125eb8;
+}
+
+.matisha {
+  height:200px;
+}
