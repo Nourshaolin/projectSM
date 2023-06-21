@@ -325,10 +325,24 @@ ul {
 }
 
 .vid-img{
-  height:186px;
+  height:233px;
   width:100%;
-  background-size: contain;
+  background-size: cover;
   background-position: top;
+  background-repeat: no-repeat;
+}
+
+.icon {
+  position: absolute;
+  top:50%; 
+  left:50%; 
+  transform: translate(-50%, -50%);
+}
+
+@media (max-width:1400px) and (min-width: 1200px) {
+  .vid-img{
+    height:200px; 
+  }
 }
 
 .vid-button{
@@ -343,10 +357,45 @@ ul {
   border-color: #cba052;
 }
 
+.AGAservices {
+  display:flex; 
+  flex-wrap: wrap;
+}
+
+.AGAservices_item {
+  padding:.7rem;
+}
 
 
 
 
+
+.AGAservices_item a {
+  text-decoration: none;
+}
+
+.AGAservices_bg {
+  height:360px; 
+  background-size: cover;
+  background-position:center; 
+  background-repeat: no-repeat;
+  border-radius: 20px;
+}
+
+.AGAservices_text {
+  
+  display: flex;
+  align-items: flex-end;
+  height: inherit;
+  justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+.AGAservices_text h4 {
+  background-color:var(--logoAgadir); 
+  padding:5px 20px;
+  text-align: right;
+}
 
 
 
