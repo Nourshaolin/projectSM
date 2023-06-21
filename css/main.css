@@ -185,15 +185,16 @@ ul {
 }
 
 .serviceimg{
-  position: relative;  
+  position: relative; 
 }
 
 .img{
+  height:360px;
+  width:236px;
   border-radius: 20px;
-  margin:0 5px;
+  margin:5px; 
+  background-position: center;
 }
-
-
 
 .img-text{
   position:absolute;
@@ -260,25 +261,9 @@ ul {
   border-color: #cba052;
 }
 
-.sub-title-2{
-  text-align: center;
-  font-weight: bold;
-}
 
 
-.child{
-  border: 1px solid var(--bs-blue);
-  text-align: center;
-  height: 200px;
-  background-color: #125eb8;
-}
-
-.matisha {
-  height:200px;
-}
-
-/* 
-Mobile menu */
+/* Mobile menu */
 
 .bg-hamburger {
   background-color: var(--logoAgadir);
@@ -304,3 +289,66 @@ Mobile menu */
   color:#000; 
   text-decoration: none;
 }
+
+/*--------*/
+
+.sub-title-2{
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 80px;
+}
+
+
+.child{
+  border: 1px solid #f5f5f5;
+  text-align: center;
+  height: 200px;
+  background-color: #f5f5f5;
+  border-radius: 15px;
+}
+
+.child:hover{
+  background-color:#cba052;
+  transition: 0.5s;
+}
+
+.matisha-icon{
+  height: 50px;
+  width:50px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.matisha-text-icon{
+  color: #000;
+  font-weight: bold;
+}
+
+.vid-img{
+  height:186px;
+  width:100%;
+  background-size: contain;
+  background-position: top;
+}
+
+.vid-button{
+  display:block;
+  background-color: #125eb8;
+  width:115px;
+  margin-left: 45%;
+}
+
+.vid-button:hover{
+  background-color: #cba052;
+  border-color: #cba052;
+}
+
+
+
+
+
+
+
+
+
+
